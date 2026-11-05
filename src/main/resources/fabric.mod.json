@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "atmos",
+	"version": "${version}",
+	"name": "Atmos",
+	"description": "This mods add atoms.",
+	"authors": [
+		"Timo_11 (MC-datapack)"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "BSD 3-Clause",
+	"icon": "assets/atmos/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"github.mcdatapack.atoms.Atmos"
+		],
+	  	"client": [
+		  "github.mcdatapack.atoms.AtomsClient"
+		],
+		"fabric-datagen": [
+			"github.mcdatapack.atoms.AtmosDataGenerator"
+		]
+	},
+	"mixins": [
+		"atmos.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.20.1",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
